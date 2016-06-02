@@ -1,0 +1,33 @@
+<!DOCTYPE struts PUBLIC 
+"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" 
+"http://struts.apache.org/dtds/struts-2.1.dtd"><!--struts-2.1.dtd文件声明了struts.xml文件的类型包括文档应该有哪些参数 -->
+<struts>
+	<package name="health" extends="json-default">
+		<action name="loginAction" class="login_action" method="login">
+			<!-- 这个响应结果不需要返回给任何视图层，json会将action里的状态信息序列化为json指定格式的数据，并返回结果 -->
+			<result type="json">
+				<!-- 这里指定将被struts2序列化的属性，该属性在action中必须有对应的getter方法 -->
+				<!--<param name="userId">dataMap</param>
+			--></result>
+		</action>
+		<action name="registerAction" class="register_action" method="register">
+			<result type="json">
+			</result>
+		</action>
+		<action name="personalInformationAction" class="personalInformation_action" method="loadInformation">
+			<result type="json"></result>
+		</action>
+		<action name="AnotherPersonalInformationAction" class="personalInformation_action" method="uploadInformation">
+			<result type="json"></result>
+		</action>
+		<action name="parametersAction" class="parameters_action" method="loadParameters">
+			<result type="json"></result>
+		</action>
+		<action name="uploadHealthDocumentAction" class="uploadHealthDocument_action" method="uploadHealthDocument">
+			<result type="stream"></result>
+		</action>
+		<action name="addFamilyNumberAction" class="addFamilyNumber_action" method="addFamilyNumber">
+			<result type="json"></result>
+		</action>
+	</package>
+</struts>

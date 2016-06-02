@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/CNP/!svn/ver/35/cnp/WebRoot/WEB-INF/lib
+END
+jstl.jar
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/CNP/!svn/ver/28/cnp/WebRoot/WEB-INF/lib/jstl.jar
+END
+pager-taglib.jar
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/CNP/!svn/ver/35/cnp/WebRoot/WEB-INF/lib/pager-taglib.jar
+END
